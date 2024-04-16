@@ -1,0 +1,1152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: default;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: #002b2f;
+}
+nav{
+    background-color: #002b2f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 12vh;
+    z-index: 3;
+}
+
+.logo img{
+    height: 45px;
+    margin: 20px 80px;
+}
+.menu{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 20px 80px;
+}
+.btn1{
+    color: #1d2a63;
+    background-color: #29abe2;
+    font-weight: bold;
+    clip-path: polygon(0% 0%, 100% 0%,100% 100%, 80% 100%, 0% 30%);
+    font-size: 20px;
+    border-color: #29abe2;
+    padding: 10px 10px 40px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0px;
+}
+.btn1:hover{
+    background-color: #1d2a63;
+    border-color: #1d2a63;
+    color: #29abe2 ;
+}
+.floatmenu{
+    background-color: #002b2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    pointer-events: none;
+    transition:all .3s ease-in-out;
+    top: -200px;
+    opacity: 0;
+    z-index: 1;
+    height: 35vh;
+    width: 100%;
+}
+.active.floatmenu{
+    opacity: 1;
+    top: 11.5vh;
+    pointer-events: fill;
+    position: fixed;
+}
+.floatmenu .line{
+    border-left: 3px solid #29abe2;
+    height: 32vh;
+}
+.opt1{
+    margin: 5px;
+    padding: 20px;
+    text-align: left;
+    width: 15%;
+    height: 32vh;
+    color: white;
+    margin-left: 0;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+.opt1:hover{
+    color: black;
+    background: whitesmoke;
+}
+.opt1 h3{
+    padding-top: 30px;
+    font-weight: 300;
+}
+.opt1 p{
+    font-size: 50px;
+    font-weight: bold;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #002b2f;
+}
+.box1{
+    height: 75vh;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-image: url(../img/bg1.jpeg);
+    background-color: #002b2f;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: top;
+    color: #04f7fc;
+    padding-top: 100px;
+}
+.box1 .box1h2box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    height: 60%;
+    width: 90%;
+}
+.box2{
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.topline,
+.bottomline{
+    border-top:5px solid #04f7fc;
+    width: 100%;
+    margin: 40px 0px;
+}
+.box2content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+.box2minibox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box2div1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.div1heading{
+    padding: 10px 30px;
+}
+.dottedbox1{
+    height: 15vh;
+    width: 21vw;
+    background-image: url(../img/dot.png);
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+}
+.leftside{
+    margin: 30px;
+    text-align: left;
+    color: white;
+}
+.box2 h2{
+    font-size: 60px;
+    padding: 10px;
+    color: #04f7fc;
+    text-align: left;
+}
+.box2 p{
+    padding: 10px;
+    font-size: 20px;
+}
+.rightside img{
+    height: 38vh;
+    margin: 30px;
+}
+.box3{
+    height: 160vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.services h1{
+    color: #04f7fc;
+    font-size: 40px;
+    border: 3px solid #04f7fc;
+    padding: 25px 50px;
+    border-radius: 11px;
+    border-top-right-radius: 75px;
+    border-bottom-left-radius: 75px;
+    margin-bottom: 20px;
+}
+.allservices{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+.service1{
+    margin: 30px;
+    width: 32%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    color: rgb(221, 210, 210);
+    font-size: 40px;
+    padding: 20px;
+}
+#consultingimg{
+    background-image: url(../img/consulting.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#solutionimg{
+    background-image: url(../img/solution.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#supportimg{
+    background-image: url(../img/support.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.serviceimg{
+    height: 160px;
+    width: 160px;
+    background-color: white;
+    border-radius: 50%;
+}
+.contentbox{
+    display: flex;
+    flex-direction: column;
+    background-color: #29abe2;
+    border-radius: 30px;
+    width: 100%;
+    height: 105vh;
+}
+.service-content{
+    height: 100% ;
+    padding: 40px;
+    font-size: 24px;
+    margin-top:20px ;
+}
+.service-heading{
+    background-color: #04f7fc;
+    border-radius: 30px 30px 50% 50%;
+}
+.service-heading h2{
+    color: black;
+}
+.box4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-image: url(../img/bg2.jpeg);
+    background-color: #002b2f;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: top;
+    height: 150vh;
+    width: 100%;
+}
+.smallboxbg{
+    padding: 50px 80px;
+    width: 100%;
+}
+.smallboxbg h2{
+    color: white;
+    font-size: 35px;
+}
+.smallboxbg p{
+    font-weight: bold;
+}
+.box4 h1{
+    color:#04f7fc;
+    font-size: 45px;
+}
+.box4 h2{
+    padding-top: 40px;
+}
+.box4 p{
+    padding: 20px;
+    color: white;
+}
+.smallbox1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.smallbox2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.minibox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #04f7fc;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 20px;
+    width: 60%;
+}
+.minibox i{
+    color: #29abe2;
+}
+.hexagonimg{
+    width: 40%;
+
+}
+.hexagonimg img{
+    width: 100%;
+}
+.hexagon1{
+    background-image: url(../img/hexagon.jpg);
+    background-position: bottom;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.smallbox3 p{
+    color: #04f7fc;
+    font-weight: bold;
+    padding: 40px;
+    font-size: 25px;
+}
+.box5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    height: 60vh;
+
+}
+.mgmt{
+    text-align: left;
+}
+.mgmt h2{
+    color: #04f7fc;
+    font-size: 45px;
+}
+.box5 p{
+    color: white;
+    font-size: 23px;
+}
+.mgmt p{
+    padding: 22px;
+    margin-bottom: 20px;
+}
+.box6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+.box6 h2{
+    color: #04f7fc;
+    font-size: 45px;
+}
+.elevatecontent{
+    padding:40px 80px;
+    background-color: #29abe2;
+    height: 300px;
+    border-radius: 20px;
+    margin: 40px 55px;
+    width: 70%;
+}
+.elevatecontent p{
+    color: #1d2a63;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.contactus .btn2{
+    color: white;
+    font-size: 45px;
+    border: 3px solid #04f7fc;
+    border-radius: 11px;
+    border-top-right-radius: 75px;
+    border-bottom-left-radius: 75px;
+    margin-bottom: 40px;
+    padding: 15px 30px;
+    background-color: #002b2f;
+}
+.contactus .btn2:hover{
+    background-color: #001a1c;
+    border-color: #039295;
+}
+button{
+    cursor: pointer;
+}
+footer{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #002b2f;
+    color: #028d90;
+}
+
+
+
+@media (max-width: 1500px) and (min-width: 1250px){
+
+    nav{
+        width: 100vw;
+    }
+    .floatmenu {
+        width: 100vw;
+    }
+    .floatmenu .line{
+        height: 33vh;
+    }
+    .opt1{
+        height: 33vh;
+    }
+    .opt1 p{
+        font-size: 50px;
+    }
+    .box1{
+        width: 100vw;
+        height: 45vh;
+        padding-top: 90px;
+
+    }   
+    .box1h2box{
+        width: 70vw;
+    }
+    .box1 h2{
+        font-size: 25px;
+        padding: 60px 120px;
+
+    }
+    .box2{
+        height: 80vh;
+        width: 100vw;
+    }
+    .box2content{
+        padding: 0;
+        margin: 0;
+    }
+    .dottedbox1{
+        width: 20vw;
+        height: 19vh;
+    }
+    .box2 h2{
+        font-size: 45px;
+    }
+    .box2 p{
+        font-size: 20px;
+    }
+    .rightside img{
+        height: 35vh;
+    }
+    .box3{
+        height: 130vh;
+        width: 100vw;
+    }
+    .box3 h1{
+        font-size: 35px;
+    }
+    .serviceimg{
+        height: 140px;
+        width: 140px;
+    }
+    .contentbox p{
+        font-size: 20px;
+    }
+    .service-heading h2{
+        font-size: 35px;
+        padding: 15px;
+        height: 20vh;
+    }
+    .contentbox{
+        height: 75vh;
+    }
+    .service-content{
+        padding: 15px;
+        margin-top: 5px;
+    }
+    .box4{
+        height: 145vh;
+        width: 100vw;
+    }
+    .smallboxbg{
+        padding: 30px;
+        width: 90vw;
+
+    }
+    .box4 h1{
+        font-size: 40px;
+    }
+    .box4 h2{
+        font-size: 35px;
+    }
+    .box4 p{
+        padding: 15px;
+        font-size: larger;
+    }
+    .hexagon1{
+        height: 60vh;
+    }
+    .smallbox3 p{
+        font-size: 22px;
+    }
+    .box5{
+        height: 50vh;
+        padding: 40px;
+    }
+    .box5 h2{
+        font-size: 40px;
+    }
+    .box5 p{
+        font-size: 21px;
+    }
+    .box6{
+        height: 85vh;
+    }
+    .box6 h2{
+        font-size: 40px;
+    }
+    .elevatecontent p{
+        font-size: 25px;
+    }
+    .contactus .btn2{
+        font-size: 30px;
+    }
+    footer{
+        height: 6vh;
+    }
+}
+
+
+
+@media (max-width: 1250px) and (min-width: 990px){
+
+    nav{
+        width: 100vw;
+    }
+    .floatmenu {
+        width: 100vw;
+        height: 35vh;
+    }
+    .floatmenu .line{
+        height: 33vh;
+    }
+    .opt1{
+        height: 33vh;
+        width: 21vw;
+    }
+    .opt1 p{
+        font-size: 50px;
+    }
+    .box1{
+        width: 100vw;
+        height: 45vh;
+        padding-top: 90px;
+
+    }   
+    .box1h2box{
+        width: 70vw;
+    }
+    .box1 h2{
+        font-size: 25px;
+        padding: 60px 120px;
+
+    }
+    .box2{
+        height: 100vh;
+        width: 100vw;
+    }
+    .box2content{
+        padding: 0;
+        margin: 0;
+    }
+    .dottedbox1{
+        width: 20vw;
+        height: 15vh;
+    }
+    .box2 h2{
+        font-size: 45px;
+    }
+    .box2 p{
+        font-size: 20px;
+    }
+    .rightside img{
+        height: 30vh;
+    }
+    .box3{
+        height: 160vh;
+        width: 100vw;
+    }
+    .box3 h1{
+        font-size: 35px;
+    }
+    .serviceimg{
+        height: 135px;
+        width: 135px;
+    }
+    .contentbox p{
+        font-size: 20px;
+        padding: 5px;
+    }
+    .service-heading h2{
+        font-size: 30px;
+        padding: 10px;
+        height: 20vh;
+    }
+    .contentbox{
+        height: 100vh;
+        width: 26vw;
+    }
+    .service-content{
+        padding: 15px;
+        margin-top: 5px;
+    }
+    .box4{
+        height: 160vh;
+        width: 100vw;
+    }
+    .smallboxbg{
+        padding: 20px;
+        width: 90vw;
+
+    }
+    .box4 h1{
+        font-size: 40px;
+    }
+    .box4 h2{
+        font-size: 35px;
+    }
+    .box4 p{
+        padding: 15px;
+        font-size: larger;
+    }
+    .hexagon1{
+        height: 50vh;
+    }
+    .smallbox3 p{
+        font-size: 20px;
+    }
+    .box5{
+        height: 50vh;
+        padding: 40px;
+    }
+    .box5 h2{
+        font-size: 35px;
+    }
+    .box5 p{
+        font-size: 21px;
+    }
+    .box6{
+        height: 85vh;
+    }
+    .box6 h2{
+        font-size: 35px;
+    }
+    .elevatecontent p{
+        font-size: 22px;
+    }
+    .contactus .btn2{
+        font-size: 30px;
+    }
+    footer{
+        height: 8vh;
+    }
+}
+
+
+
+
+@media (max-width: 990px) and (min-width: 800px){
+
+    nav{
+        width: 100vw;
+    }
+    .floatmenu {
+        height: 35vh;
+        width: 100vw;
+    }
+    .floatmenu .line{
+        height: 32vh;
+    }
+    .opt1{
+        height: 32vh;
+        width: 21vw;
+    }
+    .opt1 p{
+        font-size: 40px;
+    }
+    .box1{
+        width: 100vw;
+        height: 45vh;
+        padding-top: 90px;
+
+    }   
+    .box1h2box{
+        width: 90vw;
+    }
+    .box1 h2{
+        font-size: 25px;
+        padding: 50px 100px;
+    }
+
+    .box2{
+        height: 75vh;
+        width: 100vw;
+    }
+    .box2content{
+        padding: 0;
+        margin: 0;
+    }
+    .dottedbox1{
+        width: 26vw;
+        height: 13vh;
+    }
+    .box2 h2{
+        font-size: 35px;
+    }
+    .box2 p{
+        font-size: 14px;
+    }
+    .rightside img{
+        height: 22vh;
+    }
+    .box3{
+        height: 140vh;
+        width: 100vw;
+    }
+    .box3 h1{
+        font-size: 35px;
+    }
+    .serviceimg{
+        height: 130px;
+        width: 130px;
+    }
+    .contentbox{
+        height: 80vh;
+        width: 26vw;
+    }
+    .contentbox p{
+        font-size: 17px;
+    }
+    .service-heading h2{
+        font-size: 25px;
+        padding: 10px;
+        height: 15vw;
+    }
+    .service-content{
+        padding: 5px;
+        margin-top: 5px;
+    }
+    .box4{
+        height: 135vh;
+        width: 100vw;
+    }
+    .smallboxbg{
+        padding: 10px;
+        width: 98vw;
+    }
+    .box4 h1{
+        font-size: 35px;
+    }
+    .box4 h2{
+        font-size: 30px;
+    }
+    .box4 p{
+        padding: 10px;
+        font-weight: 600;
+    }
+    .hexagon1{
+        height: 50vh;
+    }
+    .smallbox3 p{
+        font-size: 20px;
+    }
+    .box5{
+        height: 60vh;
+        padding: 40px;
+    }
+    .box5 h2{
+        font-size: 35px;
+    }
+    .box5 p{
+        font-size: 20px;
+    }
+    .box6{
+        height: 90vh;
+    }
+    .box6 h2{
+        font-size: 35px;
+    }
+    .elevatecontent{
+        padding: 20px 10px 0px;
+    }
+    .elevatecontent p{
+        font-size: 22px;
+        font-weight: 600;
+        padding: 10px;
+    }
+    .contactus .btn2{
+        font-size: 30px;
+    }
+    footer{
+        height: 8vh;
+    }
+}
+
+
+
+
+@media (max-width: 800px) and (min-width:650px){
+
+    nav{
+        width: 100vw;
+        height: 13vh;
+    }
+    .floatmenu {
+        width: 100vw;
+        height: 30vh;
+    }
+    .floatmenu .line{
+        height: 26vh;
+    }
+    .opt1{
+        height: 26vh;
+        width: 20%;
+    }
+    .opt1 p{
+        font-size: 30px;
+        padding-top: 0px;
+    }
+    .opt1 h1{
+        font-size: 20px;
+    }
+    .opt1 h3{
+        font-size: 15px;
+    }
+    .box1{
+        width: 100vw;
+        height: 40vh;
+        padding-top: 80px;
+
+    }   
+    .box1h2box{
+        width: 80vw;
+    }
+    .box1 h2{
+        font-size: 22px;
+        padding: 10px 20px;
+    }
+    .box2{
+        height: 70vh;
+        width: 100vw;
+    }
+    .box2content{
+        padding: 0;
+        margin: 0;
+    }
+    .dottedbox1{
+        width: 16vw;
+        height: 8vh;
+    }
+    .box2 h2{
+        font-size: 22px;
+    }
+    .box2 p{
+        font-size: 12px;
+    }
+    .rightside img{
+        height: 15vh;
+    }
+    .box3{
+        height: 100vh;
+        width: 100vw;
+    }
+    .box3 h1{
+        font-size: 22px;
+    }
+    .serviceimg{
+        height: 70px;
+        width: 70px;
+    }
+    .contentbox p{
+        font-size: 11px;
+        font-weight: 600;
+    }
+    .service-heading h2{
+        font-size: 16px;
+        padding: 8px;
+        height: 12vh;
+    }
+    .contentbox{
+        height: 60vh;
+    }
+    .service-content{
+        padding: 5px;
+        margin-top: 5px;
+    }
+    .box4{
+        height: 110vh;
+        width: 100vw;
+    }
+    .smallboxbg{
+        padding: 20px;
+        width: 90vw;
+    }
+    .minibox{
+        border: 3px solid #04f7fc;
+    }
+    .box4 h1{
+        font-size: 24px;
+    }
+    .box4 h2{
+        font-size: 22px;
+    }
+    .box4 p{
+        padding: 5px;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .hexagon1{
+        height: 35vh;
+    }
+    .smallbox3 p{
+        font-size: 15px;
+    }
+    .box5{
+        height: 35vh;
+        padding: 40px;
+    }
+    .box5 h2{
+        font-size: 22px;
+    }
+    .box5 p{
+        font-size: 12px;
+    }
+    .box6{
+        height: 65vh;
+    }
+    .box6 h2{
+        font-size: 22px;
+    }
+    .elevatecontent p{
+        font-size: 15px;
+    }
+    .contactus .btn2{
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+    footer{
+        height: 5vh;
+    }
+    footer h4{
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 650px){
+
+    .logo img{
+        margin: 20px;
+    }
+    .menu{
+        padding: 5px;
+    }
+    .btn1{
+        font-size: 14px;
+    }
+    nav{
+        width: 100vw;
+        height: 12vh;
+    }
+    .floatmenu {
+        width: 100vw;
+        height: 30vh;
+    }
+    .floatmenu .line{
+        height: 25vh;
+    }
+    .opt1{
+        height: 25vh;
+        width: 20%;
+    }
+    .opt1 p{
+        font-size: 17px;
+        padding-top: 0px;
+    }
+    .opt1 h1{
+        font-size: 13px;
+    }
+    .opt1 h3{
+        font-size: 9px;
+        font-weight: 700;
+    }
+    .box1{
+        width: 100vw;
+        height: 35vh;
+        padding-top: 40px;
+
+    }   
+    .box1h2box{
+        margin-top: 30px;
+        width: 80vw;
+    }
+    .box1 h2{
+        font-size: 16px;
+        padding: 0;
+    }
+    .box2{
+        height: 65vh;
+        width: 100vw;
+    }
+    .box2content{
+        padding: 0;
+        margin: 0;
+    }
+    .dottedbox1{
+        width:12vw;
+        height: 4vh;
+    }
+    .box2 h2{
+        font-size: 14px;
+    }
+    .box2 p{
+        font-size: 8px;
+    }
+    .rightside img{
+        height: 10vh;
+    }
+    .box3{
+        height: 95vh;
+        width: 100vw;
+    }
+    .box3 h1{
+        font-size: 15px;
+    }
+    .serviceimg{
+        height: 35px;
+        width: 35px;
+    }
+    .contentbox p{
+        font-size: 7px;
+        font-weight: 500;
+    }
+    .service-heading h2{
+        font-size: 10px;
+        padding: 8px;
+        padding-top: 12px;
+        height: 10vh;
+    }
+    .contentbox{
+        height: 55vh;
+        width: 21vw;
+    }
+    .service-content{
+        padding: 2px;
+        margin-top: 2px;
+    }
+    .box4{
+        height: 110vh;
+        width: 100vw;
+    }
+    .smallboxbg{
+        padding: 10px;
+        width: 90vw;
+    }
+    .minibox{
+        border: 3px solid #04f7fc;
+    }
+    .box4 h1{
+        font-size: 16px;
+    }
+    .box4 h2{
+        font-size: 14px;
+    }
+    .box4 p{
+        padding: 2px;
+        font-size: 8px;
+        font-weight: 500;
+    }
+    .hexagon1{
+        height: 20vh;
+    }
+    .smallbox3 p{
+        font-size: 10px;
+    }
+    .box5{
+        height: 40vh;
+        padding: 30px;
+    }
+    .box5 h2{
+        font-size: 16px;
+    }
+    .box5 p{
+        font-size: 9px;
+    }
+    .box6{
+        height: 45vh;
+    }
+    .box6 h2{
+        font-size: 16px;
+    }
+    .elevatecontent{
+        padding: 10px;
+        margin: 5px;
+        height: 25vh;
+    }
+    .elevatecontent p{
+        font-size: 12px;
+    }
+    .contactus .btn2{
+        margin-top: 15px;
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+    footer{
+        height: 5vh;
+    }
+    footer h4{
+        font-size: 7px;
+    }
+}
